@@ -279,8 +279,8 @@ img{
         width: 90%;
     }
     .card-text {
-        width: 500px;
         font-size: 44px;
+        text-align: center;
     }
     .card-img-top {
         border-radius: 20px 20px;
@@ -289,10 +289,12 @@ img{
         width: 539px;
     }
     .detail_link a{
-        font-size: 30px;
+        font-size: 40px;
     }
     .give_request{
-        font-size: 28px;
+        font-size: 40px;
+        margin-top: 20px;
+    }
     }
     .about__inner{
         font-size: 62px;
@@ -307,6 +309,13 @@ img{
     }
     .festival__title{
         font-size: 120px;
+    }
+
+    .card-body {
+        flex-direction: column;
+    }
+    .details {
+        flex-direction: column;
     }
 
 }
