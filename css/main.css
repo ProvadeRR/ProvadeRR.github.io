@@ -277,6 +277,7 @@ img{
     }
     .card{
         width: 90%;
+        margin-bottom: 84px;
     }
     .card-text {
         font-size: 44px;
