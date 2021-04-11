@@ -97,7 +97,7 @@ img{
     color:white;
     font-weight: normal;
     background: linear-gradient(90deg , #ff7800, #b818a0, #7815d4);
-    margin-bottom: 100px;
+    margin-bottom: 300px;
     transition: box-shadow .5s linear;
 
 }
@@ -234,88 +234,21 @@ img{
 }
 .section-about{
     width: 100%;
-    padding-top: 200px;
-    background: gray;
+    padding-top: 300px;;
     height: max-content;
     background: black;
-    /*background-image: url("../img/wp2757880-wallpaper-gif.gif");*/
-    /*background-position: center;*/
-    /*background-size: cover;*/
-    /*box-sizing: border-box;*/
-    /*cursor: initial;*/
+    position: relative;
     display: flex;
 }
-@media screen and (min-width:2532px){
-    .festivals-bg{
-        height: 450px;
-        top: -170px;
-    }
+.block-perehod{
+    display: block;
+    position: absolute;
+    z-index: 1;
+    height: 300px;
+    width: 100%;
+    top: -225px;
 }
-@media screen and (max-width:1920px){
-
-}
-@media screen and (max-width:1200px){
-    .festivals-bg{
-        height: 250px;
-    }
-}
-@media screen and (max-width: 991px){
-    .nav{
-        display: none;
-    }
-    .festivals-bg{
-        height: 200px;
-        top: -110px;
-    }
-    .nazva-img{
-        height: 350px;
-        width: 350px;
-        border: 2px solid white;
-    }
-    .nazva-cart{
-        flex-direction: column!important;
-    }
-    .card{
-        width: 90%;
-        margin-bottom: 84px;
-    }
-    .card-text {
-        font-size: 44px;
-        text-align: center;
-    }
-    .card-img-top {
-        border-radius: 20px 20px;
-        margin-top: 50px;
-        height: 510px;
-        width: 539px;
-    }
-    .detail_link a{
-        font-size: 40px;
-    }
-    .give_request{
-        font-size: 40px;
-        margin-top: 20px;
-    }
-    .about__inner{
-        font-size: 62px;
-    }
-    .nazva_cart_text{
-        padding-left: 0px;
-        font-size: 40px;
-    }
-    .nazva-submit{
-        width: 80%;
-        padding: 43px 4px;
-    }
-    .festival__title{
-        font-size: 120px;
-    }
-
-    .card-body {
-        flex-direction: column;
-    }
-    .details {
-        flex-direction: column;
-    }
-
+.div-block-perehod{
+    position: relative;
+    text-align: center;
 }
