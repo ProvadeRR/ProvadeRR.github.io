@@ -14,7 +14,7 @@ img{
 }
 .header{
     background: linear-gradient(90deg , #ff7800, #b818a0, #7815d4);
-    box-shadow: 0 0px 50px 46px rgb(0 0 0 / 50%);
+    box-shadow: 0 0px 60px 45px rgb(0 0 0 / 50%);
     position: fixed;
     z-index: 999;
     width: 100%;
@@ -91,7 +91,7 @@ img{
 }
 .nazva-submit:hover {
     background: linear-gradient(270deg, #ff7800, #b818a0, #7815d4);
-    box-shadow: 0 0px 50px 5px white;
+    box-shadow: 0 0px 60px 0px white;
 }
 .festivals{
     position: relative;
@@ -149,7 +149,7 @@ img{
     width: 600px;
 }
 .card{
-    box-shadow: 0 0px 50px 10px rgb(0 0 0 / 90%);
+    box-shadow: 0 0px 60px 0px rgb(0 0 0 / 90%);
     border-radius: 20px;
     width: 24rem;
     flex-direction: column;
@@ -193,7 +193,7 @@ img{
 }
 .give_request:hover {
     background: linear-gradient(270deg, #ff7800, #b818a0, #7815d4);
-    box-shadow: 0 0px 50px 5px white;
+    box-shadow: 0 0px 60px 0px white;
 }
 .background{
     background-image: url("../img/bg-festivals.png");
@@ -252,8 +252,9 @@ img{
     text-align: center;
 }
 .galery__main_image{
+    box-shadow: 0 0px 60px 0px rgb(0 0 0 / 90%);
     width: 100%;
-    height: 500px;
+    height: 550px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background: black;
@@ -263,7 +264,7 @@ img{
 }
 .main_img{
     width: 100%;
-    height: 500px;;
+    height: 550px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     border-bottom-left-radius: 20px;
@@ -271,7 +272,7 @@ img{
     transition: opacity 0.5s ease;
 }
 .galery_main_card{
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 .main_description{
     position: absolute;
@@ -295,10 +296,11 @@ img{
     justify-content: space-between;
 }
 .galery_secondary_image{
+    box-shadow: 0 0px 60px 0px rgb(0 0 0 / 90%);
     width: 92%;
     display: flex;
     justify-content: center;
-    height: 300px;
+    height: 330px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background: black;
@@ -308,7 +310,7 @@ img{
 }
 .secondary_img{
     width: 100%;
-    height: 300px;
+    height: 330px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
     background: black;
@@ -370,12 +372,12 @@ img{
     padding: 10px;
 }
 .card-tabir{
-    box-shadow: 0 0px 50px 10px rgb(0 0 0 / 90%);
+    box-shadow: 0 0px 60px 0px rgb(0 0 0 / 90%);
 }
 .card-tabir:first-child{
     transform: rotate(-20deg);
     position: absolute;
-    left: 17%;
+    left: 10%;
     bottom: -9%;
     transition: z-index 0.6s linear;
     transition: box-shadow 0.6s linear;
@@ -390,7 +392,7 @@ img{
     transform: rotate(20deg);
     z-index: 0;
     position: absolute;
-    right: 17%;
+    right: 10%;
     bottom: -9%;
     transition: z-index 0.6s linear;
     transition: box-shadow 0.6s linear;
@@ -401,5 +403,20 @@ img{
 .card-tabir:hover{
     cursor: pointer;
     z-index: 2;
-    box-shadow: 0 0px 79px 20px rgb(0 0 0 / 90%);
+    box-shadow: 0 0px 70px 10px rgb(0 0 0 / 90%);
+}
+.tabir_description{
+    margin-top: 120px;
+    display: flex;
+    justify-content: center;
+}
+.tabir_description-back{
+    border: 2px solid #b818a0;
+    border-radius: 40px;
+    width: 90%;
+    padding: 30px 30px 30px 30px;
+    background-color: #fff;
+}
+.tabir_description-text-name{
+    color: orange;
 }
