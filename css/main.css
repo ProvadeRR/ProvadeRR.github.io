@@ -212,6 +212,7 @@ img{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 88%;
 }
 .galery{
     position: relative;
@@ -239,13 +240,11 @@ img{
     position: relative;
     display: flex;
 }
-.block-perehod{
-    display: block;
-    position: absolute;
-    z-index: 1;
-    height: 300px;
+.block-perehod {
+    background: linear-gradient(90deg, #ff7800, #b818a0, #7815d4);
+    z-index: 999;
+    height: 100px;
     width: 100%;
-    top: -225px;
 }
 .div-block-perehod{
     position: relative;
@@ -419,4 +418,79 @@ img{
 }
 .tabir_description-text-name{
     color: orange;
+}
+.about_us_item_img{
+    height: 130px;
+    width: 130px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.about_us_item{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    padding: 30px 15px;
+    background-color: #fff;
+    border: 2px solid #ff7800;
+    border-radius: 40px;
+    box-shadow: 0 0px 70px 10px rgb(0 0 0 / 90%);
+    margin-bottom: 35px;
+}
+.about_us_item:nth-child(2){
+    border: 2px solid #b818a0;
+     
+}
+.about_us_item:nth-child(3){
+    border: 2px solid #8e167c;
+   
+}
+.about_us_item:nth-child(4){
+    border: 2px solid  #7815d4;
+     
+}
+.about_us_items{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.about_us_img{
+    width: 40px;
+    height: 40px;
+}
+.about_us_links{
+    float: right;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+.about_us_links:first-child{
+    margin-right: 30px;
+}
+.subdescription{
+    margin-top: 40px;
+    width: 90%;
+}
+
+.footer{
+    background: linear-gradient(90deg, #ff7800, #b818a0, #7815d4);
+    box-shadow: 0 0px 60px 45px rgb(0 0 0 / 50%);
+    z-index: 999;
+    width: 100%;
+    margin-top: 50px;
+
+}
+.contacts{
+    color:white;
+    padding: 30px 0;
+}
+.contacts > h3{
+    font-size: 60px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width: 992px){
+    /*.nav{*/
+    /*    display: none;*/
+    /*}*/
 }
