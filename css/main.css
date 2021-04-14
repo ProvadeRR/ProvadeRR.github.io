@@ -509,6 +509,13 @@ img{
     }
 }
 @media screen and (max-width: 600px){
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+    .logo__img{
+        padding: 10px 0;
+    }
     .nav__links{
         display: none!important;
     }
@@ -655,4 +662,51 @@ img{
         height: 517px;
     }
 
+}
+@media screen and (max-width: 340px){
+    .block-perehod {
+        height: 147px;
+    }
+    .festival__title {
+        font-size:50px;
+    }
+    .card-img-top {
+        height: 250px;
+        width: 250px;
+    }
+    .title {
+        font-size: 50px;
+    }
+    .main_img{
+        height: 230px;
+    }
+    .galery__main_image {
+        height: 230px;
+    }
+    .secondary_img{
+        height: 230px;
+    }
+    .galery_secondary_image{
+        height: 230px;
+    }
+    .logo{
+        height: 60px;
+        width: 60px;
+    }
+    .logo__img{
+        padding: 10px 0;
+    }
+    .card-tabir:nth-child(1){
+        width: 290px !important;
+    }
+    .card-tabir:nth-child(2){
+        width: 290px !important;
+    }
+    .card-tabir:nth-child(3){
+        width: 290px !important;
+    }
+    .card-img-top{
+        height: 240px;
+        width: 240px;
+    }
 }
