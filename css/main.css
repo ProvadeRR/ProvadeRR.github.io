@@ -245,10 +245,10 @@ img{
     height: 260px;
     top: -220px;
     background: url(../img/perehod.png) center bottom / cover no-repeat;
-    
+
     text-align: center;
     width: 100%;
-    
+
 }
 
 .galery__main_image{
@@ -440,20 +440,20 @@ img{
 }
 .about_us_item:nth-child(2){
     border: 2px solid #b818a0;
-     
+
 }
 .about_us_item:nth-child(3){
     border: 2px solid #8e167c;
-   
+
 }
 .about_us_item:nth-child(4){
     border: 2px solid  #7815d4;
-     
+
 }
 .about_us_items{
-  display: flex;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 .about_us_img{
     width: 40px;
@@ -491,7 +491,6 @@ img{
     font-weight: bold;
 }
 
-
 @media screen and (max-width: 992px){
     /*.nav{*/
     /*    display: none;*/
@@ -499,13 +498,161 @@ img{
 }
 @media screen and (min-width: 1790px){
     .block-perehod {
-    height: 300px;
-    top: -240px;
+        height: 300px;
+        top: -240px;
     }
 }
 @media screen and (min-width: 2064px){
     .block-perehod {
-    height: 350px;
-    top: -260px;
+        height: 350px;
+        top: -260px;
     }
+}
+@media screen and (max-width: 600px){
+    .nav__links{
+        display: none!important;
+    }
+    .nazva_cart_text{
+        font-size: 18px;
+    }
+    .section-about{
+        padding-top: 167px;
+    }
+    .nazva-cards {
+        padding-top: 48px;
+    }
+    .logo {
+        width: 80px;
+        height: 80px;
+    }
+    .nazva-cart {
+        flex-direction: column;
+        align-items: center;
+    }
+    .nazva_cart_text{
+        width: 90%;
+        padding: 0;
+        margin-top: 15px;
+    }
+    .about__inner{
+        margin: 0;
+    }
+    .nazva-submit{
+        width: 100%;
+        font-size: 25px;
+        margin-bottom: 188px;
+    }
+    .block-perehod{
+        height: 171px;
+        top: -110px;
+    }
+    .main_img{
+        height: 300px;
+    }
+    .galery__main_image{
+        height: 300px;
+    }
+    .main_description{
+        display: block;
+        opacity: 1;
+        font-size: 24px;
+    }
+    .secondary_img{
+        height: 300px;
+    }
+    .secondary_cart{
+        flex-direction: column;
+    }
+    .secondary-galery_image{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .galery_secondary_image {
+        height: 300px;
+        width: 100%;
+    }
+    .secondary-galery_image:first-child{
+        width: 100%;
+        margin-top: -60px;
+        justify-content: center;
+    }
+    .secondary-galery_image:last-child{
+        justify-content: center;
+    }
+    .secondary_description{
+        opacity: 1;
+        display: block;
+        font-size: 24px;
+    }
+    .give_request{
+        width: 100%;
+        text-align: center;
+        font-size: 18px;
+        font-weight: bold;
+    }
+    .details {
+        flex-direction: column-reverse;
+    }
+    .detail_link{
+        margin-top: 18px;
+    }
+    .card-tabir:first-child {
+        /* transform: rotate(-20deg); */
+        /* position: absolute; */
+        /* left: 10%; */
+        /* bottom: -9%; */
+        /* transition: z-index 0.6s linear; */
+        /* transition: box-shadow 0.6s linear; */
+    }
+    .items {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+    }
+    .card-tabir:nth-child(1){
+        transition: none;
+        transform: none;
+        left: 0;
+        position: relative;
+    }
+    .card-tabir:nth-child(2){
+        transition: none;
+        transform: none;
+        left: 0;
+        position: relative;
+    }
+    .card-tabir:nth-child(3){
+        transition: none;
+        transform: none;
+        left: 0;
+        position: relative;
+    }
+    .tabir_description {
+        margin-top: -2px;
+    }
+    .tabir_description-back{
+        width: 100%;
+    }
+    .about_us_item{
+        flex-direction: column;
+        align-items: center;
+    }
+    .subdescription{
+        margin: 0px 20px;
+    }
+    .about_us_description{
+        text-align: center;
+        margin: 15px 0;
+    }
+    .contacts{
+        padding-top: 140px;
+    }
+    .contacts > h3{
+        font-size: 30px;
+    }
+    .back_footer{
+        height: 517px;
+    }
+
 }
