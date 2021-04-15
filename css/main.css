@@ -70,6 +70,7 @@ img{
     width: 30px;
     border-radius: 20px;
     background: black;
+    transition: all .5s ease;
 }
 .burger-menu span:nth-child(1){
     top: -15px;
