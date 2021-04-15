@@ -81,9 +81,11 @@ img{
     top: 5px;
 }
 .open{
+    position: fixed;
     transform: translateX(13px)!important;
 }
 .open-mobile{
+    position: fixed;
     transform: translateX(0px) !important;
 }
 
