@@ -18,21 +18,19 @@ $(document).ready(function(){
             ($('.burger-menu > span:nth-child(2)'))[0].style.transform='none';
             ($('.burger-menu > span:nth-child(1)'))[0].style.top='-15px';
             ($('.burger-menu > span:nth-child(1)'))[0].style.transform='none';
-
         }
-
        if(this.innerHTML === 'Фестівалі')
-           $("html, body").animate({ scrollTop: $('.festivals').offset().top - 200  } , );
+           $("html, body").animate({ scrollTop: $('.festivals').offset().top - 200  } ,'slow' );
         if(this.innerHTML === 'Головна')
             $("html, body").animate({ scrollTop: 0  });
         if(this.innerHTML === 'Галерея')
-            $("html, body").animate({ scrollTop: $('.galery').offset().top - 200  }, );
+            $("html, body").animate({ scrollTop: $('.galery').offset().top - 200  }, 'slow');
         if(this.innerHTML === 'Табір')
-            $("html, body").animate({ scrollTop: $('.tabir').offset().top - 200  },);
+            $("html, body").animate({ scrollTop: $('.tabir').offset().top - 200  },'slow');
         if(this.innerHTML === 'Про нас')
-            $("html, body").animate({ scrollTop: $('.about_us_title').offset().top - 200  });
+            $("html, body").animate({ scrollTop: $('.about_us_title').offset().top - 200  },'slow');
         if(this.innerHTML === 'Реквізити та контакти')
-            $("html, body").animate({ scrollTop: $('.footer').offset().top - 200  });
+            $("html, body").animate({ scrollTop: $('.footer').offset().top - 200  },'slow');
     });
 
     $('.burger-menu').click(function() {
