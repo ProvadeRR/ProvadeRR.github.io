@@ -1,14 +1,15 @@
 $(document).ready(function(){
     $('.nav__item > a').click(function(e){
         e.preventDefault();
-        if($('.nav').hasClass('open')){
+        if($('.nav').hasClass('open')) {
             document.querySelector('.nav').classList.remove('open');
-            ($('.burger-menu > span:nth-child(3)'))[0].style.opacity='1';
-            ($('.burger-menu > span:nth-child(3)'))[0].style.top='5px';
-            ($('.burger-menu > span:nth-child(2)'))[0].style.top='-5px';
-            ($('.burger-menu > span:nth-child(2)'))[0].style.transform='none';
-            ($('.burger-menu > span:nth-child(1)'))[0].style.top='-15px';
-            ($('.burger-menu > span:nth-child(1)'))[0].style.transform='none';
+            ($('.burger-menu > span:nth-child(3)'))[0].style.opacity = '1';
+            ($('.burger-menu > span:nth-child(3)'))[0].style.top = '5px';
+            ($('.burger-menu > span:nth-child(2)'))[0].style.top = '-5px';
+            ($('.burger-menu > span:nth-child(2)'))[0].style.transform = 'none';
+            ($('.burger-menu > span:nth-child(1)'))[0].style.top = '-15px';
+            ($('.burger-menu > span:nth-child(1)'))[0].style.transform = 'none';
+            $('body')[0].style.overflow = 'auto';
         }
         if($('.nav').hasClass('open-mobile')){
             document.querySelector('.nav').classList.remove('open-mobile');
@@ -18,6 +19,7 @@ $(document).ready(function(){
             ($('.burger-menu > span:nth-child(2)'))[0].style.transform='none';
             ($('.burger-menu > span:nth-child(1)'))[0].style.top='-15px';
             ($('.burger-menu > span:nth-child(1)'))[0].style.transform='none';
+            $('body')[0].style.overflow = 'auto';
         }
        if(this.innerHTML === 'Фестівалі')
            $("html, body").animate({ scrollTop: $('.festivals').offset().top - 200  } ,'slow' );
@@ -33,7 +35,7 @@ $(document).ready(function(){
             $("html, body").animate({ scrollTop: $('.footer').offset().top - 200  },'slow');
     });
 
-    $('.burger-menu').click(function() {
+    $('.burger-menu').click(function(e) {
         if (window.innerWidth < 631) {
             document.querySelector('.nav').classList.remove('open');
             document.querySelector('.nav').classList.toggle('open-mobile');
@@ -47,6 +49,7 @@ $(document).ready(function(){
             ($('.burger-menu > span:nth-child(2)'))[0].style.transform='rotate(130deg)';
             ($('.burger-menu > span:nth-child(1)'))[0].style.top='-15px';
             ($('.burger-menu > span:nth-child(1)'))[0].style.transform='rotate(45deg)';
+            $('body')[0].style.overflow = 'hidden';
             return true;
         }
         if($('.nav').hasClass('open-mobile')){
@@ -55,6 +58,7 @@ $(document).ready(function(){
             ($('.burger-menu > span:nth-child(2)'))[0].style.transform='rotate(130deg)';
             ($('.burger-menu > span:nth-child(1)'))[0].style.top='-15px';
             ($('.burger-menu > span:nth-child(1)'))[0].style.transform='rotate(45deg)';
+            $('body')[0].style.overflow = 'hidden';
             return true;
         }
         ($('.burger-menu > span:nth-child(3)'))[0].style.opacity='1';
@@ -63,6 +67,7 @@ $(document).ready(function(){
         ($('.burger-menu > span:nth-child(2)'))[0].style.transform='none';
         ($('.burger-menu > span:nth-child(1)'))[0].style.top='-15px';
         ($('.burger-menu > span:nth-child(1)'))[0].style.transform='none';
+        $('body')[0].style.overflow = 'auto';
     })
 
 });
