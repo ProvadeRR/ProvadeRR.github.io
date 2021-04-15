@@ -22,17 +22,17 @@ $(document).ready(function(){
             $('body')[0].style.overflow = 'auto';
         }
        if(this.innerHTML === 'Фестівалі')
-           $("html, body").animate({ scrollTop: $('.festivals').offset().top - 200  } ,'slow' );
+           $("html, body").animate({ scrollTop: $('.festivals').offset().top - 130  } ,'slow' );
         if(this.innerHTML === 'Головна')
             $("html, body").animate({ scrollTop: 0  });
         if(this.innerHTML === 'Галерея')
-            $("html, body").animate({ scrollTop: $('.galery').offset().top - 200  }, 'slow');
+            $("html, body").animate({ scrollTop: $('.galery').offset().top - 130  }, 'slow');
         if(this.innerHTML === 'Табір')
-            $("html, body").animate({ scrollTop: $('.tabir').offset().top - 200  },'slow');
+            $("html, body").animate({ scrollTop: $('.tabir').offset().top - 130  },'slow');
         if(this.innerHTML === 'Про нас')
-            $("html, body").animate({ scrollTop: $('.about_us_title').offset().top - 200  },'slow');
+            $("html, body").animate({ scrollTop: $('.about_us_title').offset().top - 130  },'slow');
         if(this.innerHTML === 'Реквізити та контакти')
-            $("html, body").animate({ scrollTop: $('.footer').offset().top - 200  },'slow');
+            $("html, body").animate({ scrollTop: $('.footer').offset().top - 130  },'slow');
     });
 
     $('.burger-menu').click(function(e) {
