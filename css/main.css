@@ -12,33 +12,136 @@ a{
 img{
     display: block;
 }
+.container
+{
+    max-width: 1300px;
+    margin: 0 auto;
+}
 .header{
     background: linear-gradient(90deg , #ff7800, #b818a0, #7815d4);
     box-shadow: 0 0px 60px 45px rgb(0 0 0 / 50%);
     position: fixed;
-    z-index: 999;
+    z-index: 2;
     width: 100%;
 }
+.header__inner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.logo{
+    position: relative;
+    z-index: 3;
+    width: 110px;
+    height: 110px;
+}
 .logo__img{
-    padding: 15px 0;
+    padding: 15px 0px 15px;
+}
+.nav{
+    transition: all .5s ease;
+    padding-right: 15px;
 }
 .nav__links{
     width: 100%;
+}
+.nav__item{
+    margin-left: 4rem;
+}
+.nav__item:first-child{
+    margin: 0;
 }
 .nav__item a{
     color:white;
     font-size: 20px;
 }
-.nav__item a:hover{
-    padding: 8px 0;
-    border-bottom: 2px solid white;
-    border-top: 2px solid white;
+.burger-menu{
+    position: relative;
+    z-index: 100;
+    display: none;
+}
+.burger-menu span{
+    position: absolute;
+    top: 0px;
+    left: 0;
+    content: "";
+    height: 3px;
+    width: 30px;
+    border-radius: 20px;
+    background: black;
+}
+.burger-menu span:nth-child(1){
+    top: -15px;
+}
+.burger-menu span:nth-child(2){
+    top: -5px;
+}
+.burger-menu span:nth-child(3){
+    top: 5px;
+}
+.open{
+    transform: translateX(13px)!important;
+}
+.open-mobile{
+    transform: translateX(0px) !important;
 }
 
-.logo{
-    width: 110px;
-    height: 110px;
+@media(max-width: 1163px){
+    .nav__item{
+        margin-left: 3.0rem;
+    }
 }
+@media(max-width: 1081px){
+    .nav__item{
+        margin-left: 2.0rem;
+    }
+}
+@media(max-width: 981px){
+    .nav{
+        display: block;
+        text-align: center;
+        background: linear-gradient(90deg , #ff7800, #b818a0, #7815d4);
+        position: absolute;
+        width: 386px;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        transform: translateX(1000px);
+        transition: all .5s ease;
+    }
+    .nav__links{
+        display: block;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 40%;
+        margin: 0;
+    }
+    .nav__item{
+        margin: 0 0px 40px!important;
+    }
+    .burger-menu{
+        display: block;
+        padding-right: 5rem;
+    }
+}
+@media(max-width: 621px){
+        .nav{
+            width: 100%;
+            transition: all .5s ease;
+        }
+}
+@media(max-width: 415px){
+    .nav{
+        width: 100%;
+        transition: all .5s ease;
+
+    }
+    .nav__links{
+        padding-top: 60%;
+    }
+}
+
 
 .about__inner{
     font-weight: 600;
@@ -515,9 +618,6 @@ img{
     }
     .logo__img{
         padding: 10px 0;
-    }
-    .nav__links{
-        display: none!important;
     }
     .nazva_cart_text{
         font-size: 18px;
