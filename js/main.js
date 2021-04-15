@@ -3,10 +3,24 @@ $(document).ready(function(){
         e.preventDefault();
         if($('.nav').hasClass('open')){
             document.querySelector('.nav').classList.remove('open');
+            ($('.burger-menu > span:nth-child(3)'))[0].style.opacity='1';
+            ($('.burger-menu > span:nth-child(3)'))[0].style.top='5px';
+            ($('.burger-menu > span:nth-child(2)'))[0].style.top='-5px';
+            ($('.burger-menu > span:nth-child(2)'))[0].style.transform='none';
+            ($('.burger-menu > span:nth-child(1)'))[0].style.top='-15px';
+            ($('.burger-menu > span:nth-child(1)'))[0].style.transform='none';
         }
         if($('.nav').hasClass('open-mobile')){
             document.querySelector('.nav').classList.remove('open-mobile');
+            ($('.burger-menu > span:nth-child(3)'))[0].style.opacity='1';
+            ($('.burger-menu > span:nth-child(3)'))[0].style.top='5px';
+            ($('.burger-menu > span:nth-child(2)'))[0].style.top='-5px';
+            ($('.burger-menu > span:nth-child(2)'))[0].style.transform='none';
+            ($('.burger-menu > span:nth-child(1)'))[0].style.top='-15px';
+            ($('.burger-menu > span:nth-child(1)'))[0].style.transform='none';
+
         }
+
        if(this.innerHTML === 'Фестівалі')
            $("html, body").animate({ scrollTop: $('.festivals').offset().top - 200  } , );
         if(this.innerHTML === 'Головна')

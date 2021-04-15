@@ -144,8 +144,6 @@ img{
         padding-top: 40%;
     }
 }
-
-
 .about__inner{
     font-weight: 600;
     color: white;
@@ -198,6 +196,16 @@ img{
 .nazva-submit:hover {
     background: linear-gradient(270deg, #ff7800, #b818a0, #7815d4);
     box-shadow: 0 0px 60px 0px white;
+}
+@media(max-width: 864px){
+    .about_wrapper{
+        padding: 0 20px;
+    }
+}
+@media(max-width: 338px){
+    .section-about{
+        padding-top: 122px!important;
+    }
 }
 .festivals{
     position: relative;
