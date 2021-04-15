@@ -124,6 +124,7 @@ img{
         margin: 0 0px 40px!important;
     }
     .burger-menu{
+        margin-right: -38px;
         display: block;
         padding-right: 5rem;
     }

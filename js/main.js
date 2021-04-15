@@ -1,4 +1,9 @@
 $(document).ready(function(){
+
+    $('.logo__img').click(function(){
+        $("html, body").animate({ scrollTop: 0  });
+    });
+
     $('.nav__item > a').click(function(e){
         e.preventDefault();
         if($('.nav').hasClass('open')) {
